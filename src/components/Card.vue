@@ -4,8 +4,7 @@
     class="mx-auto mb-3"
     max-width="344"
     variant="outlined"
-
-
+    draggable="true"
   >
     <v-card-title>
         {{ title }}
@@ -20,15 +19,9 @@
 </template>
 <script>
 
- import { VCard, VCardText, VCardTitle, VCardSubtitle} from '../../node_modules/vuetify/lib/components'
+ //import { VCard, VCardText, VCardTitle, VCardSubtitle} from '../../node_modules/vuetify/lib/components'
 
   export default {
-      components: {
-          VCard,
-          VCardText,
-          VCardSubtitle,
-          VCardTitle
-      },
       props: ['title', 'description'],
       methods: {
           fun() {
